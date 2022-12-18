@@ -36,11 +36,12 @@ public class StatusController {
 
     @PostMapping("/delivery")
     public Status addStatus(@RequestBody Status object) {
-return statusService.add(object);
+        return statusService.add(object);
     }
+
     @DeleteMapping("/delivery/{id}")
-public void deleteStatus(@PathVariable Integer id) {
-statusService.deleteById(id);
+    public void deleteStatus(@PathVariable Integer id) {
+        statusService.deleteById(id);
     }
 
  /*   @PatchMapping("/delivery/{id}/{send},{ontheway},{delivered}")

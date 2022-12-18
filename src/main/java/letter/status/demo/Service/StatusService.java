@@ -40,7 +40,7 @@ public class StatusService {
     }
 
     public void deleteById(Integer id) {
-statusRepository.deleteById(id);
+        statusRepository.deleteById(id);
     }
 /*
     public Status patchById(Integer id, boolean send, boolean ontheway, boolean delivered) {
